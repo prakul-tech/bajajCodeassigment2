@@ -1,0 +1,23 @@
+<div class="container my-5 main-container">
+  <h2 class="text-center my-2 mb-4">Employee Details</h2>
+  <table class="table table-hover table-striped table-dark">
+    <thead  class="table-primary">
+    <tr>
+    <th>Empcode</th>
+    <th>Name</th>
+    <th>Designation</th>
+     <th>Email</th>
+     <th>Location</th>
+     </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users$">
+   <td>{{ user.empcode }}</td>
+   <td>{{ user.name }}</td>
+  <td>{{ user.designation }}</td>
+   <td>{{ user.email }}</td>
+   <td>{{user.location}}</td>
+   </tr>
+    </tbody>
+   </table>
+</div>
